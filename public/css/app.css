@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Poppins-Thin;
-  src: url(../fonts/Poppins/Poppins-Thin.ttf);
+  font-family: Poppins-Light;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
@@ -15828,7 +15828,7 @@ body .emporium {
 }
 
 body .navbar {
-  font-family: Poppins-Thin;
+  font-family: Poppins-Light;
 }
 
 body .navbar li {
@@ -15843,4 +15843,51 @@ body .navbar li a {
 body .navbar button {
   border-radius: 0%;
   font-weight: bold;
+}
+
+.shopat {
+  background-color: #F3F3F3;
+  height: 450px;
+}
+
+.shopat .shop {
+  padding-left: 200px;
+  font-family: Poppins-Light;
+  font-weight: bold;
+  color: #D94848;
+  font-size: 52px;
+  padding-top: 100px;
+}
+
+.shopat .imglogo {
+  padding-left: 200px;
+  height: 115px;
+}
+
+.shopat .wonderful {
+  padding-left: 200px;
+  font-family: Poppins-Light;
+  color: #535353;
+}
+
+.shopat .btnshop {
+  border-radius: 30px;
+  padding: 10px;
+  font-family: 12px;
+  border: none;
+  margin-left: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.shopat .slider {
+  position: fixed;
+  z-index: 2;
+  left: 55%;
+  top: 25%;
+  height: 400px;
 }
