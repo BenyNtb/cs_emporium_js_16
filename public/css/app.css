@@ -16181,6 +16181,27 @@ body .navbar button {
   border-radius: 5px;
 }
 
+.hot {
+  font-family: Poppins-Light;
+}
+
+.hot p, .hot span {
+  font-weight: bold;
+}
+
+.hot p {
+  padding-top: 20px;
+}
+
+.hot img {
+  height: 150px;
+}
+
+.hot button {
+  border-radius: 100%;
+  padding: 20px;
+}
+
 .recents {
   font-family: Poppins-Light;
 }
