@@ -16461,6 +16461,8 @@ body {
 
 body .emporium {
   font-family: Poppins-Bold;
+  display: none;
+  display: none;
 }
 
 body .navbar {
@@ -16481,12 +16483,20 @@ body .navbar button {
   font-weight: bold;
 }
 
+body .navbar .btn-black, body .navbar .btn-blanc {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid grey;
+}
+
 .discover {
   background-image: url("../img/cta-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px;
+  background-attachment: fixed;
+  height: 700px;
   font-family: Poppins-Light;
 }
 
@@ -16570,9 +16580,19 @@ body .navbar button {
   padding: 20px;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .recents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
 .shopat {
   background-color: #F3F3F3;
   height: 450px;
+  top: 50px;
 }
 
 .shopat .shop {
@@ -16582,11 +16602,18 @@ body .navbar button {
   color: rouge;
   font-size: 52px;
   padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
 }
 
 .shopat .imglogo {
   padding-left: 200px;
   height: 115px;
+  height: 60px;
+  padding-left: 0px;
 }
 
 .shopat .wonderful {
@@ -16611,10 +16638,16 @@ body .navbar button {
 
 .shopat .slider {
   z-index: 2;
-  left: 55%;
-  top: 25%;
+  right: 25%;
+  top: 50%;
   height: 400px;
   position: absolute;
+  height: 450px;
+  width: 400px;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .sliders .row .living {
@@ -16685,4 +16718,100 @@ body .navbar button {
 
 body {
   margin: 0;
+}
+
+.modale1 {
+  display: none;
+  font-family: Poppins-Light;
+}
+
+.modale1 .logo {
+  justify-content: flex-end;
+}
+
+.modale1 .logo .fermer {
+  border-radius: 4px;
+}
+
+.modale1 .connexion .btnco {
+  border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.modale1 .email {
+  position: absolute;
+  flex-direction: column;
+}
+
+.modale1 .reseaux {
+  font-size: 20px;
+}
+
+.modale1 .reseaux ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.modale1 .reseaux ul li {
+  list-style: none;
+}
+
+.modale1 .reseaux ul .fb {
+  color: #1961e6;
+}
+
+.modale1 .reseaux ul .snap {
+  color: #f8ea26;
+}
+
+.modale2 {
+  display: none;
+  font-family: Poppins-Light;
+}
+
+.modale2 .logo {
+  justify-content: flex-end;
+}
+
+.modale2 .logo .fermer {
+  border-radius: 4px;
+}
+
+.modale2 .connexion .btnco {
+  border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.modale2 .email {
+  position: absolute;
+  flex-direction: column;
+}
+
+.modale2 .reseaux {
+  font-size: 20px;
+}
+
+.modale2 .reseaux ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.modale2 .reseaux ul li {
+  list-style: none;
+}
+
+.modale2 .reseaux ul .fb {
+  color: #1961e6;
+}
+
+.modale2 .reseaux ul .snap {
+  color: #f8ea26;
 }

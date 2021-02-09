@@ -2,6 +2,10 @@ body
     margin: 0
     .emporium
         font-family: Poppins-Bold
+        @include media-breakpoint-only(sm)
+        display: none
+        @include media-breakpoint-only(md)
+        display: none
     .navbar
         font-family: Poppins-Light
         li
@@ -12,3 +16,8 @@ body
         button
             border-radius: 0%
             font-weight: bold
+        .btn-black, .btn-blanc
+            border-radius: 5px
+            height: 30px
+            width: 30px
+            border: 1px solid grey
