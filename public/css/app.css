@@ -16163,6 +16163,45 @@ body .navbar button {
   font-weight: bold;
 }
 
+.discover {
+  background-image: url("../img/cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  font-family: Poppins-Light;
+}
+
+.discover .GP {
+  position: relative;
+  top: 50%;
+}
+
+.discover .GP button {
+  border-radius: 5px;
+}
+
+.recents {
+  font-family: Poppins-Light;
+}
+
+.recents p, .recents span {
+  font-weight: bold;
+}
+
+.recents p {
+  padding-top: 20px;
+}
+
+.recents img {
+  height: 250px;
+}
+
+.recents button {
+  border-radius: 100%;
+  padding: 20px;
+}
+
 .shopat {
   background-color: #F3F3F3;
   height: 450px;
