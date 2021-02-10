@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>emporium.</h1>
+        <h1 class="empo">emporium.</h1>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"></a>
             <button class="nav1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="navbar">
                     <li class="nav-item active">
                         <a class="nav-link text-uppercase" href="#">home <span class="sr-only">(current)</span></a>
                     </li>
@@ -40,6 +40,8 @@
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#">blog</a>
                     </li>
+                    <button class="blanc btn-light mr-2" type="submit"></button>
+                    <button class="black btn-noir mr-2" type="submit"></button>
                     <button type="button" class="btn btn-outline-secondary">connexion</button>
                 </ul>
             </div>
@@ -149,25 +151,25 @@
     </section>
     <!-- SECTION RECENTS PRODUCTS -->
     <section class="recents">
-        <h5 class="text-center">Recents Products</h5>
+        <h5 class="text-center" id="rp">Recents Products</h5>
         <!-- PREMIERE DIV  -->
         <div class=".div container justify-content-lg-around d-flex align-items-center text-center">
             <div class="row justify-content-lg-around">
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="product-luxury-sofa">
-                    <p>Luxury Sofa</p>
+                    <p id="para1">Luxury Sofa</p>
                     <span class="text-rouge">$600</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="product-gloves">
-                    <p>Leather Gloves</p>
+                    <p id="para1">Leather Gloves</p>
                     <span class="span bg-rouge rounded-circle text-white text-center">sale!</span>
                     <span><s>$34.00</s></span>
                     <span class="text-rouge">$27.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="product-cups">
-                    <p>Colorful Bowl</p>
+                    <p id="para1">Colorful Bowl</p>
                     <span class="text-rouge">$18.00</span>
                 </div>
             </div>
@@ -177,19 +179,19 @@
             <div class="row justify-content-lg-around">
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-bag.jpg" alt="product-bag">
-                    <p>Women Bag</p>
+                    <p id="para1">Women Bag</p>
                     <span class="span bg-rouge rounded-circle text-white text-center">sale!</span>
                     <span><s>$420.00</s></span>
                     <span class="text-rouge">$350.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-tshitr.jpg" alt="product-tshitr">
-                    <p>Minimal T-Shirt</p>
+                    <p id="para1">Minimal T-Shirt</p>
                     <span class="text-rouge">$15.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-plates.jpg" alt="product-plates">
-                    <p>Plates Set</p>
+                    <p id="para1">Plates Set</p>
                     <span class="text-rouge">$30.00</span>
                 </div>
             </div>
@@ -199,17 +201,17 @@
             <div class="row justify-content-lg-around">
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="product-modern-sofa">
-                    <p>Modern Sofa</p>
+                    <p id="para1">Modern Sofa</p>
                     <span class="text-rouge">$900.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-bed.jpg" alt="product-bed">
-                    <p>Bed Linen</p>
+                    <p id="para1">Bed Linen</p>
                     <span class="text-rouge">$79.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="product-shoes">
-                    <p>Minimal Shoes</p>
+                    <p id="para1">Minimal Shoes</p>
                     <span class="text-rouge">$60.00</span>
                 </div>
             </div>
@@ -224,29 +226,29 @@
     </section>
     <!-- SECTION HOT FASHION PRODUCTS -->
     <section class="hot">
-        <h3 class="text-center">Hot Fashion Products</h3>
+        <h3 class="text-center" id="discover">Hot Fashion Products</h3>
         <div class="container justify-content-lg-around d-flex align-items-center text-center mx-auto">
             <div class="row justify-content-lg-around">
                 <div class="col-md-4" >
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="product-luxury-sofa">
-                    <p>Luxury Sofa</p>
+                    <p id="para1">Luxury Sofa</p>
                     <span class="text-rouge">$600</span>
                 </div>
                 <div class="col-md-4" >
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="product-gloves">
-                    <p>Leather Gloves</p>
+                    <p id="para1">Leather Gloves</p>
                     <button type="button" class="btn btn-rouge text-uppercase">sale!</button>
                     <span><s>$34.00</s></span>
                     <span class="text-rouge">$27.00</span>
                 </div>
                 <div class="col-md-4" >
                     <img src="./public/img/products_mini/product-cups.jpg" alt="product-cups">
-                    <p>Colorful Bowl</p>
+                    <p id="para1">Colorful Bowl</p>
                     <span class="text-rouge">$18.00</span>
                 </div>
                 <div class="col-md-4" >
                     <img src="./public/img/products_mini/product-bag.jpg" alt="product-bag">
-                    <p>Women Bag</p>
+                    <p id="para1">Women Bag</p>
                     <button type="button" class="btn btn-rouge text-uppercase">sale!</button>
                     <span><s>$420.00</s></span>
                     <span class="text-rouge">$350.00</span>

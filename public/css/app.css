@@ -16489,6 +16489,13 @@ header nav .collapse ul li {
   margin: 10px;
 }
 
+header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid grey;
+}
+
 .discover {
   background-image: url("../img/cta-bg.jpg");
   background-repeat: no-repeat;
