@@ -5,44 +5,56 @@
     top: 50px
 
     .shop
-        padding-left: 200px;
+        padding-left: 200px
         font-family: Poppins-Light
         font-weight: bold
         color: rouge
         font-size: 52px
-        padding-top: 100px;
+        padding-top: 100px
         p
         @include media-breakpoint-only(sm)
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: flex
+        align-items: center
+        justify-content: center
         text-align: center
         
         @include media-breakpoint-only(md)
-        padding-left: 0;
+        padding-left: 0
     .imglogo
-        padding-left: 200px;
-        height: 115px;
-        
+        padding-left: 200px
+        height: 115px
+        @include media-breakpoint-only(sm)
+        height: 68px
+        justify-content: center
+        align-items: center
+        margin-left: 10px
         @include media-breakpoint-only(md)
         height: 60px
         padding-left: 0px
     .wonderful
-        padding-left: 200px;
+        padding-left: 200px
         font-family: Poppins-Light
         color: #535353
+        @include media-breakpoint-only(sm)
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-left: 0px
+        text-align: center
     .btnshop
         border-radius: 30px
         padding: 10px
         font-family: 12px
         border: none
         margin-left: 200px
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 30px
+        padding-right: 30px
         font-size: 12px
         align-items: center
-        display: flex;
-        justify-content: center;
+        display: flex
+        justify-content: center
+        @include media-breakpoint-only(sm)
+        margin-left: 125px
     .slider
         z-index: 2;
         right: 25%
@@ -50,9 +62,7 @@
         height: 400px
         position: absolute 
         @include media-breakpoint-only(sm)
-        height: 450px
-        width: 400px
-        // z-index: 2;
+        visibility: hidden
         @include media-breakpoint-only(md)
         left: 0%
         display: flex;

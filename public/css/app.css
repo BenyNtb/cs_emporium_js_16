@@ -16455,39 +16455,38 @@ a.text-noir:hover, a.text-noir:focus {
   }
 }
 
-body {
-  margin: 0;
+header h1 {
+  text-align: center;
+  font-family: Poppins-bold;
+  margin-top: 10px;
 }
 
-body .emporium {
-  font-family: Poppins-Bold;
-  display: none;
-  display: none;
-}
-
-body .navbar {
+header nav {
   font-family: Poppins-Light;
 }
 
-body .navbar li {
-  margin-right: 50px;
-  font-size: 12px;
+header nav .nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
 }
 
-body .navbar li a {
-  font-weight: bold;
+header nav .collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  margin-top: 25px;
 }
 
-body .navbar button {
-  border-radius: 0%;
-  font-weight: bold;
+header nav .collapse ul {
+  margin: 10px;
+  text-align: center;
 }
 
-body .navbar .btn-black, body .navbar .btn-blanc {
-  border-radius: 5px;
-  height: 30px;
-  width: 30px;
-  border: 1px solid grey;
+header nav .collapse ul li {
+  margin: 10px;
 }
 
 .discover {
@@ -16559,8 +16558,28 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   font-weight: bold;
 }
 
+.learn p {
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+.learn .trust3 {
+  padding-bottom: 30px;
+}
+
 .recents {
   font-family: Poppins-Light;
+  margin-left: 0px;
+}
+
+.recents .div {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 .recents p, .recents span {
@@ -16612,6 +16631,10 @@ body .navbar .btn-black, body .navbar .btn-blanc {
 .shopat .imglogo {
   padding-left: 200px;
   height: 115px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
   height: 60px;
   padding-left: 0px;
 }
@@ -16620,6 +16643,11 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   padding-left: 200px;
   font-family: Poppins-Light;
   color: #535353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  text-align: center;
 }
 
 .shopat .btnshop {
@@ -16634,6 +16662,7 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-left: 125px;
 }
 
 .shopat .slider {
@@ -16642,8 +16671,7 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   top: 50%;
   height: 400px;
   position: absolute;
-  height: 450px;
-  width: 400px;
+  visibility: hidden;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -16664,6 +16692,9 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   flex-direction: column;
   color: white;
   font-family: Poppins-light;
+  padding-right: 0px;
+  height: 315px;
+  width: 390px;
 }
 
 .sliders .row .living hr {
@@ -16686,6 +16717,8 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   flex-direction: column;
   color: white;
   font-family: Poppins-light;
+  padding-right: 0px;
+  width: 390px;
 }
 
 .sliders .row .sale hr {
@@ -16708,6 +16741,9 @@ body .navbar .btn-black, body .navbar .btn-blanc {
   flex-direction: column;
   color: white;
   font-family: Poppins-light;
+  padding-right: 0px;
+  height: 315px;
+  width: 390px;
 }
 
 .sliders .row .clothes hr {
