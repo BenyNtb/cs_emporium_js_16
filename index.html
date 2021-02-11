@@ -22,7 +22,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav" id="navbar">
-                    <li id="emporium2"><h1>emporium.</h1></li>
+                    <li id="emporium2">
+                        <h1>emporium.</h1>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link text-uppercase" href="#">home <span class="sr-only">(current)</span></a>
                     </li>
@@ -42,7 +44,7 @@
                         <a class="nav-link text-uppercase" href="#">blog</a>
                     </li>
                     <li><button class="blanc btn-light mr-2" type="submit"></button>
-                    <button class="black btn-noir mr-2" type="submit"></button></li>
+                        <button class="black btn-noir mr-2" type="submit"></button></li>
                     <button type="button" class="sign btn-outline-secondary">connexion</button>
 
                 </ul>
@@ -55,7 +57,7 @@
         <!-- modal connexion -->
         <div id="connexion" class="co">
             <!-- entete avec btn fermer  -->
-            <button class="fermer bg-rouge text-white float-right " >x</button>
+            <button class="fermer bg-rouge text-white float-right ">x</button>
             <h1 class="font-weight-bold">emporium.</h1>
             <div class=" d-flex justify-content-center align-items-center">
                 <button type="button" class="btn connexion btn-rouge mx-1 text-white">Connexion</button>
@@ -124,16 +126,17 @@
                 </div>
             </div>
         </div>
-            <div>
-                <h1 class="shop text-rouge">Shop at</h1>
-                <img class="imglogo" src="./public/img/logo.png" alt="logo">
-                <p class="wonderful">A wonderful serenity has taken possession for my entire soul, like these these
-                    sweet<br>mornings of spring which I enjoy with my.</p>
-                <button type="button" class="btnshop btn-rouge text-uppercase">Sale items</button>
-            </div>
-            <div>
-                <img class="slider" src="./public/img/slider-1.jpg" alt="slider-1">
-            </div>
+        <!-- SHOP -->
+        <div>
+            <h1 class="shop text-rouge">Shop at</h1>
+            <img class="imglogo" src="./public/img/logo.png" alt="logo">
+            <p class="wonderful">A wonderful serenity has taken possession for my entire soul, like these these
+                sweet<br>mornings of spring which I enjoy with my.</p>
+            <button type="button" class="btnshop btn-rouge text-uppercase">Sale items</button>
+        </div>
+        <div>
+            <img class="slider" src="./public/img/slider-1.jpg" alt="slider-1">
+        </div>
     </section>
 
     <!-- SECTION LIVING ROOM, ETC -->
@@ -158,72 +161,123 @@
     </section>
     <!-- SECTION RECENTS PRODUCTS -->
     <section class="recents">
-        <h5 class="text-center" id="rp">Recents Products</h5>
-        <!-- PREMIERE DIV  -->
-        <div class=".div container justify-content-lg-around d-flex align-items-center text-center">
-            <div class="row justify-content-lg-around">
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="product-luxury-sofa">
-                    <p id="para1">Luxury Sofa</p>
-                    <span class="text-rouge">$600</span>
+        <h2 id="titreCarte" class="titreCarte text-center mt-5 mb-5">Recents Products</h2>
+        <!-- PREMIERE DIV -->
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa">
+                        </div>
+                        <p id="para1" class="mt-3">Luxury Sofa</p>
+                        <span class="text-danger mt-1 mb-3">$600.00</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-gloves.jpg" alt="product-gloves">
-                    <p id="para1">Leather Gloves</p>
-                    <span class="span bg-rouge rounded-circle text-white text-center">sale!</span>
-                    <span><s>$34.00</s></span>
-                    <span class="text-rouge">$27.00</span>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
+                        </div>
+
+                        <div class="row d-flex">
+                            <div class="col-6 d-flex justify-content-center align-items-center">
+                                <button class="bg-danger text-white text-uppercase mt-3">sale!</button>
+                            </div>
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-start px-0">
+                                <p id="para1" class="mt-3">Leather Gloves</p>
+                                <div class="row d-flex justify-content-start mx-0 align-items-center">
+                                    <del class="mb-4 mt-1"><span class="text-secondary mt-3 mr-1">$34.00</span></del>
+                                    <span class="text-danger mt-1 mb-4">$27.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-cups.jpg" alt="product-cups">
-                    <p id="para1">Colorful Bowl</p>
-                    <span class="text-rouge">$18.00</span>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
+                        </div>
+                        <p id="para1" class="mt-3">Colorful Bowl</p>
+                        <span class="text-danger mt-1 mb-3">$18.00</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- DEUXIEME DIV -->
-        <div class="container justify-content-lg-around d-flex align-items-center text-center mx-auto">
-            <div class="row justify-content-lg-around">
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-bag.jpg" alt="product-bag">
-                    <p id="para1">Women Bag</p>
-                    <span class="span bg-rouge rounded-circle text-white text-center">sale!</span>
-                    <span><s>$420.00</s></span>
-                    <span class="text-rouge">$350.00</span>
+                <div class="animation d-none">
+                    <button class="noir"></button>
+                    <button class="rouge"></button>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="product-tshitr">
-                    <p id="para1">Minimal T-Shirt</p>
-                    <span class="text-rouge">$15.00</span>
+                <!-- DEUXIEME DIV -->
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-bag.jpg" alt="bag">
+                        </div>
+                        <div class="row d-flex">
+                            <div class="col-6 d-flex justify-content-center align-items-center">
+                                <button class="bg-danger text-white text-uppercase mt-4">sale!</button>
+                            </div>
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-start px-0">
+                                <p id="para1" class="mt-3">Women Bag</p>
+                                <div class="row d-flex mx-0 justify-content-start align-items-center">
+                                    <del class="mb-4 mt-1"><span class="text-secondary mt-3 mr-1">$420.00</span></del>
+                                    <span class="text-danger mt-1 mb-4">$350.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-plates.jpg" alt="product-plates">
-                    <p id="para1">Plates Set</p>
-                    <span class="text-rouge">$30.00</span>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-tshitr.jpg" alt="tshirt">
+                        </div>
+                        <span id="para1" class="mt-3">Minimal T-shirt</span>
+                        <span class="text-danger mt-1 mb-3">$15.00</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- TROISIEME DIV -->
-        <div class="container justify-content-lg-around d-flex align-items-center text-center mx-auto">
-            <div class="row justify-content-lg-around">
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="product-modern-sofa">
-                    <p id="para1">Modern Sofa</p>
-                    <span class="text-rouge">$900.00</span>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-plates.jpg" alt="plates">
+                        </div>
+                        <p id="para1" class="mt-3">Plates Set</p>
+                        <span class="text-danger mt-1 mb-3">$30.00</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-bed.jpg" alt="product-bed">
-                    <p id="para1">Bed Linen</p>
-                    <span class="text-rouge">$79.00</span>
+
+                <!-- TROISIEME DIV -->
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="modern">
+                        </div>
+                        <span id="para1" class="mt-3">Modern-Sofa</span>
+                        <span class="text-danger mt-1 mb-3">$900.00</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="./public/img/products_mini/product-shoes.jpg" alt="product-shoes">
-                    <p id="para1">Minimal Shoes</p>
-                    <span class="text-rouge">$60.00</span>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-bed.jpg" alt="bed">
+                        </div>
+                        <span id="para1" class="mt-3">Bed Linen</span>
+                        <span class="text-danger mt-1 mb-3">$79.00</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="products">
+                            <img src="./public/img/products_mini/product-shoes.jpg" alt="shoes">
+                        </div>
+                        <p id="para1" class="mt-3">Minimal Shoes</p>
+                        <span class="text-danger mt-1 mb-3">$60.00</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- fin section cartes -->
     <!-- SECTION DISCOVER -->
     <section class="discover">
         <div class="container GP text-center">

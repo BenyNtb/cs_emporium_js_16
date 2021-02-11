@@ -16457,7 +16457,7 @@ a.text-noir:hover, a.text-noir:focus {
 
 header h1 {
   text-align: center;
-  font-family: Poppins-bold;
+  font-family: Poppins-Light;
   margin-top: 10px;
 }
 
@@ -16593,71 +16593,83 @@ header nav .collapse ul #emporium2 {
 
 .recents {
   font-family: Poppins-Light;
-  margin-left: 0px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.recents .div {
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
+.recents .container .row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
 }
 
-.recents p, .recents span {
-  font-weight: bold;
+.recents .container .row .col-4 div {
+  width: 98%;
 }
 
-.recents p {
-  padding-top: 20px;
+.recents .container .row .col-4 div .products {
+  position: relative;
+  overflow: hidden;
 }
 
-.recents img {
-  height: 250px;
+.recents .container .row .col-4 div .products img {
+  max-width: 100%;
 }
 
-.recents:hover {
+.recents .container .row .col-4 div .products:hover {
   transform: scale(1.1);
-  transition: all;
+  transition: all 1s;
 }
 
-.recents:hover::before {
+.recents .container .row .col-4 div .products:hover::before {
   content: "View Details";
   position: absolute;
-  background-color: #000000fd;
+  background-color: #000;
   text-align: center;
   color: white;
-  opacity: 0.6;
-  padding-top: 50px;
+  opacity: 0.8;
+  padding-top: 10px;
   bottom: 0;
-  animation: produit 0.5;
+  animation: products 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
 }
 
-.recents:hover::after {
-  content: "Add to card";
+.recents .container .row .col-4 div .products:hover::after {
+  content: "Add to Card";
   position: absolute;
-  background-color: #DD4545;
+  background-color: #f51313;
   text-align: center;
   color: white;
-  opacity: 0.6;
-  padding-top: 50px;
+  opacity: 0.8;
+  padding-top: 10px;
   bottom: 0;
-  animation: produit 0.5s;
+  animation: products 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
   left: 50%;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .recents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+.recents .container .row .col-4 div span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.recents .container .row .col-4 div .row .col-6 button {
+  height: 50px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+@keyframes products {
+  0% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 20%;
   }
 }
 

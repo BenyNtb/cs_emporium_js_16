@@ -1,53 +1,62 @@
 .recents
     font-family: Poppins-Light
-    margin-left: 0px
-    .div
-        margin-right: 0px
-        margin-left: 0px
-        @include media-breakpoint-only(sm)
-        padding-right: 0px
-        display: flex
-        justify-content: center
-        align-items: center
-        position: absolute
-    p,span
-        font-weight: bold
-    p
-        padding-top: 20px 
-    .span
-        // height: 50px
-    img
-        height: 250px
-    &:hover
-        transform: scale(1.1)
-        transition: all    
-        &::before
-            content: "View Details"
-            position: absolute
-            background-color: #000000fd
-            text-align: center
-            color: white
-            opacity: 0.6
-            padding-top: 50px
-            bottom: 0
-            animation: produit 0.5
-            animation-fill-mode: forwards
-            max-width: 50%
-        &::after
-            content: "Add to card"
-            position: absolute
-            background-color: #DD4545
-            text-align: center
-            color: white
-            opacity: 0.6
-            padding-top: 50px
-            bottom: 0
-            animation: produit 0.5s
-            animation-fill-mode: forwards
-            max-width: 50%
-            left: 50%    
-    @include media-breakpoint-only(sm)
-        display: flex
-        justify-content: center
-        align-items: center
-        padding: 0
+    padding-left: 15%
+    padding-right: 15%
+    .container
+        .row
+            display: flex
+            justify-content: center
+            .col-4
+                div
+                    width: 98%
+                    .products
+                        position: relative
+                        overflow: hidden
+                        img
+                            max-width: 100%
+                        &:hover
+                            transform: scale(1.1)
+                            transition: all 1s
+                            &::before
+                                content: "View Details"
+                                position: absolute
+                                background-color: #000
+                                text-align: center
+                                color: white
+                                opacity: 0.8
+                                padding-top: 10px
+                                bottom: 0
+                                animation: products 0.5s 
+                                animation-fill-mode: forwards
+                                max-width: 50%
+                            &::after
+                                content: "Add to Card"
+                                position: absolute
+                                background-color: #f51313
+                                text-align: center
+                                color: white
+                                opacity: 0.8
+                                padding-top: 10px
+                                bottom: 0
+                                animation: products 0.5s 
+                                animation-fill-mode: forwards
+                                max-width: 50%
+                                left: 50%
+                    span
+                        font-weight: bold
+                        font-size: 17px
+                    .row
+                        .col-6
+                            button
+                                height: 50px
+                                width: 60px
+                                border: none
+                                border-radius: 50%
+                                margin: 5px 0
+@keyframes products
+    0%
+        width: 100%
+        height: 0%
+    100%
+        width: 100%
+        height: 20%
