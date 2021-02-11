@@ -42,12 +42,29 @@
                                 animation-fill-mode: forwards
                                 max-width: 50%
                                 left: 50%
+                    img
+                        @include media-breakpoint-down(sm)
+                            display: flex
+                            justify-content: center
+                            align-items: center
                     p
                         font-weight: bold
+                        @include media-breakpoint-down(sm)
+                            font-size: 12px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            text-align: center
                     span
                         font-weight: bold
                         font-size: 17px
                         padding-right: 0px
+                        @include media-breakpoint-down(sm)
+                            font-size: 12px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            text-align: center
                     .sale
                         border-radius: 50% 
                         height: 80px
@@ -56,6 +73,8 @@
                         display: flex
                         justify-content: center
                         z-index: -1
+                        @include media-breakpoint-down(sm)
+                            display: none
                         
                     .row
                         .col-6

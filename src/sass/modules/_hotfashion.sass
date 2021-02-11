@@ -16,6 +16,15 @@
         width: 60vw
         font-weight: bold
         text-align: center
+        @include media-breakpoint-down(sm)
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-right: 0px
+            margin-left: 0px
+            width: 60vw
+        @include media-breakpoint-down(lg)
+            width: 90vw 
         .sale
             border-radius: 50% 
             height: 80px

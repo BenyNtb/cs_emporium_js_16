@@ -3,6 +3,7 @@
     height: 450px
     @include media-breakpoint-only(sm)
     top: 50px
+    // height: 565px
 
     .shop
         font-family: Poppins-Light
@@ -55,10 +56,13 @@
             align-items: center
             margin-left: 0px
     .slider
-        z-index: 2;
+        // z-index: 2;
         height: 400px
         position: absolute 
-        @include media-breakpoint-only(md)
-        display: flex;
-        justify-content: center
-        align-content: center
+        @include media-breakpoint-down(sm)
+        // display: flex;
+        // justify-content: center
+        // align-content: center
+        // height: 208px
+        // left: 27%
+        // display: none

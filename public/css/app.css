@@ -16572,6 +16572,23 @@ header nav .collapse ul #emporium2 {
   text-align: center;
 }
 
+@media (max-width: 767.98px) {
+  .hot .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    margin-left: 0px;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hot .carousel {
+    width: 90vw;
+  }
+}
+
 .hot .carousel .sale {
   border-radius: 50%;
   height: 80px;
@@ -16662,14 +16679,42 @@ header nav .collapse ul #emporium2 {
   left: 50%;
 }
 
+@media (max-width: 767.98px) {
+  .recents .container .row .col-4 div img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .recents .container .row .col-4 div p {
   font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .recents .container .row .col-4 div p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .recents .container .row .col-4 div span {
   font-weight: bold;
   font-size: 17px;
   padding-right: 0px;
+}
+
+@media (max-width: 767.98px) {
+  .recents .container .row .col-4 div span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .recents .container .row .col-4 div .sale {
@@ -16680,6 +16725,12 @@ header nav .collapse ul #emporium2 {
   display: flex;
   justify-content: center;
   z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+  .recents .container .row .col-4 div .sale {
+    display: none;
+  }
 }
 
 .recents .container .row .col-4 div .row .col-6 button {
@@ -16874,10 +16925,6 @@ body {
 }
 
 .shopat .slider {
-  z-index: 2;
   height: 400px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
