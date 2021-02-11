@@ -36,6 +36,7 @@ light.addEventListener('click', () => {
     });
     discover.style.color = "black"
     header.style.backgroundColor = "white"
+    nav1.style.backgroundColor = "black"
 })
 
 // CONNEXION / SUBSCRIPTION

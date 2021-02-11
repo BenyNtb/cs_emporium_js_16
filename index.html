@@ -26,22 +26,22 @@
                         <h1>emporium.</h1>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-uppercase" href="#">home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase" href="#top">home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">product</a>
+                        <a class="nav-link text-uppercase" href="#sectionrecents">product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">blog</a>
+                        <a class="nav-link text-uppercase" href="#about">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">element</a>
+                        <a class="nav-link text-uppercase" href="#elements">elements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">contact</a>
+                        <a class="nav-link text-uppercase" href="#about">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">blog</a>
+                        <a class="nav-link text-uppercase" href="#footer">contact</a>
                     </li>
                     <li><button class="blanc btn-light" type="submit"></button>
                         <button class="black btn-noir " type="submit"></button></li>
@@ -144,7 +144,7 @@
     </section>
 
     <!-- SECTION LIVING ROOM, ETC -->
-    <section class="sliders pt-5">
+    <section class="sliders pt-5" id="elements">
         <!-- <div class="container"> -->
         <div></div>
         <div class="row">
@@ -164,7 +164,7 @@
         </div>
     </section>
     <!-- SECTION RECENTS PRODUCTS -->
-    <section class="recents">
+    <section class="recents" id="sectionrecents">
         <h2 id="rp" class="text-center mt-5 mb-5">Recents Products</h2>
         <!-- PREMIERE DIV -->
         <div class="container">
@@ -282,7 +282,7 @@
         </div>
     </section>
     <!-- SECTION DISCOVER -->
-    <section class="discover">
+    <section class="discover" id="about">
         <div class="container GP text-center">
             <h1 class="text-white">Discover Thousands of Great Products</h1>
             <button type="button" class="btn btn-rouge text-uppercase ">learn more</button>
@@ -369,7 +369,7 @@
             </div>
     </section>
     <!-- SECTION LEARN MORE  -->
-    <section class="learn">
+    <section class="learn" id="about">
         <div class="row mx-auto text-center justify-content-around">
             <!-- TRUSTED -->
             <div class="firsttrusted bg-clair col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mr-0 mb-3">
@@ -385,21 +385,32 @@
                 <h5 class="text-uppercase text-white pb-5">very fast shipping</h5>
                 <p class="text-white pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate
                     mollitia nemo earum nisi veritatis dolore.Vitae<br>deleniti</p>
-                <button type="button" class="btn btn-light text-uppercase">learn more</button>
-            </div>
-            <!-- TRUSTED -->
-            <div class="secondtrusted bg-clair col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mr-0 mb-3">
-                <i class="far fa-check-circle pt-5 pb-5"></i>
-                <h5 class="text-uppercase pb-5">trusted by 10,000+ customers</h5>
-                <p class=" trust3 pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate mollitia
-                    nemo
-                    earum nisi veritatis dolore.Vitae<br>deleniti</p>
-                <button type="button" class="btn btn-dark text-uppercase">learn more</button>
-            </div>
-        </div>
+                    <button type="button" class="btn btn-light text-uppercase">learn more</button>
+                </div>
+                <!-- TRUSTED -->
+                <div class="secondtrusted bg-clair col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mr-0 mb-3">
+                    <i class="far fa-check-circle pt-5 pb-5"></i>
+                    <h5 class="text-uppercase pb-5">trusted by 10,000+ customers</h5>
+                    <p class=" trust3 pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate mollitia
+                        nemo
+                        earum nisi veritatis dolore.Vitae<br>deleniti</p>
+                        <button type="button" class="btn btn-dark text-uppercase">learn more</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FOOTER -->
+    <section>
+        <ul class="none">
+            <li class="top text-uppercase">
+                <a href="#top" class="disable-link"><i class="fas fa-arrow-up"></i> Top <i class="fas fa-arrow-up"></i></a>
+            </li>
+        </ul>
+        <!-- <div id="top" class="d-flex justify-content-center">
+            <button class="myBtn bg-rouge"><i class="fas fa-arrow-up"></i>Top<i class="fas fa-arrow-up"></i></button>
+        </div> -->
     </section>
-    <!-- FOOTER -->
-    <section class="footer1 bg-gris">
+    <section class="footer1 bg-gris" id="footer">
         <div class="container row justify-content-lg-around d-flex align-items-center  mx-auto">
             <div class="about col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mr-0 mb-3">
                 <h5 class="text-uppercase text-white pt-5">about us</h5>

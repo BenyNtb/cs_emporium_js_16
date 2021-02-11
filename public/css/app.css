@@ -16600,6 +16600,21 @@ header nav .collapse ul #emporium2 {
   margin: 0px;
 }
 
+.none {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: black;
+  font-size: 22px;
+  color: black;
+  text-decoration: underline;
+}
+
+.none a {
+  color: black;
+}
+
 .learn {
   font-family: Poppins-Light;
 }
