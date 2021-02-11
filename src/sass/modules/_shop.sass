@@ -40,7 +40,7 @@
         justify-content: center
         align-items: center
         padding-left: 0px
-        text-align: center
+        
     .btnshop
         border-radius: 30px
         padding: 10px
@@ -56,17 +56,10 @@
         @include media-breakpoint-only(sm)
         margin-left: 125px
     .slider
-        // z-index: 2;
-        // right: 45%
-        left: 70%
-        top: 25%
+        z-index: 2;
         height: 400px
         position: absolute 
-        @include media-breakpoint-only(sm)
-        display: none
-        left: 0%
-        top: 50%
-        // @include media-breakpoint-only(md)
-        // display: flex;
-        // justify-content: center;
-        // align-content: center;
+        @include media-breakpoint-only(md)
+        display: flex;
+        justify-content: center;
+        align-content: center;

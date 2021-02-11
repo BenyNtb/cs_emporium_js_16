@@ -25,6 +25,8 @@ dark.addEventListener('click', () => {
     });
     discover.style.color = "white"
     // pararecents.style.color = "white";
+    // header.style.color = "black"
+    header.style.backgroundColor = "black"
 })
 
         // LIGHT MODE
@@ -39,6 +41,7 @@ light.addEventListener('click', () => {
         element.style.color = "black"
     });
     discover.style.color = "black"
+    header.style.backgroundColor = "white"
 })
 
 // CONNEXION / SUBSCRIPTION
@@ -99,3 +102,31 @@ function myFunction() {
 }
 
 window.onscroll = function(){myFunction()}
+
+// CAROUSEL
+
+let item1 = document.querySelector('.item1')
+let item2 = document.querySelector('.item2')
+let item3 = document.querySelector('.item3')
+let item4 = document.querySelector('.item4')
+let carou = document.querySelector('.carou')
+
+item1.addEventListener('click', () => {
+    carou.style.transform = "translateX(0%)"
+    carou.style.transition = "2s"
+})
+
+item2.addEventListener('click', () => {
+    carou.style.transform = "translateX(-300px)"
+    carou.style.transition = "2s"
+})
+
+item3.addEventListener('click', () => {
+    carou.style.transform = "translateX(-600px)"
+    carou.style.transition = "2s"
+})
+
+item4.addEventListener('click', () => {
+    carou.style.transform = "translateX(-900px)"
+    carou.style.transition = "2s"
+})

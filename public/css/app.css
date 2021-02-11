@@ -16553,21 +16553,10 @@ header nav .collapse ul #emporium2 {
   font-family: Poppins-Light;
 }
 
-.hot p, .hot span {
-  font-weight: bold;
-}
-
-.hot p {
-  padding-top: 20px;
-}
-
-.hot img {
-  height: 150px;
-}
-
-.hot button {
-  border-radius: 100%;
-  padding: 20px;
+.hot .carousel {
+  font-family: Poppins-Light;
+  overflow: hidden;
+  width: 60vw;
 }
 
 .learn {
@@ -16649,9 +16638,15 @@ header nav .collapse ul #emporium2 {
   left: 50%;
 }
 
+.recents .container .row .col-4 div p {
+  font-weight: bold;
+}
+
 .recents .container .row .col-4 div span {
   font-weight: bold;
   font-size: 17px;
+  padding-right: 0px;
+  z-index: 0;
 }
 
 .recents .container .row .col-4 div .row .col-6 button {
@@ -16712,7 +16707,6 @@ header nav .collapse ul #emporium2 {
   justify-content: center;
   align-items: center;
   padding-left: 0px;
-  text-align: center;
 }
 
 .shopat .btnshop {
@@ -16731,13 +16725,12 @@ header nav .collapse ul #emporium2 {
 }
 
 .shopat .slider {
-  left: 70%;
-  top: 25%;
+  z-index: 2;
   height: 400px;
   position: absolute;
-  display: none;
-  left: 0%;
-  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .sliders .row .living {
