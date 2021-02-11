@@ -78,3 +78,24 @@ btnSubs.addEventListener('click', () => {
     }
     connexion.classList.add('d-none')
 })
+
+// NAVBAR
+
+let header = document.getElementById('header')
+let emporium2 = document.querySelector('#emporium')
+
+let sticky = header.offsetTop
+
+function myFunction() {
+    if (window.pageYOffset>sticky) {
+        header.classList.add("sticky")
+        emporium2.style.display = "flex"
+        emporium.style.display = "none"
+    } else {
+        header.classList.remove("sticky")
+        emporium2.style.display = "none"
+        emporium.style.display = "block"
+    }
+}
+
+window.onscroll = function(){myFunction()}

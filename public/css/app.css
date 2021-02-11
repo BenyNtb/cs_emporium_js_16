@@ -16482,18 +16482,35 @@ header nav .collapse {
 
 header nav .collapse ul {
   margin: 10px;
-  text-align: center;
 }
 
 header nav .collapse ul li {
   margin: 10px;
 }
 
-header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
+header nav .collapse ul li .black, header nav .collapse ul li .blanc {
   border-radius: 5px;
   height: 30px;
   width: 30px;
   border: 1px solid grey;
+}
+
+header nav .collapse ul .sign {
+  width: 130px;
+  height: 50px;
+}
+
+header nav .collapse ul #emporium2 {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 2px solid grey;
 }
 
 .discover {
@@ -16599,66 +16616,40 @@ header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
 
 .recents img {
   height: 250px;
-  position: relative;
 }
 
-.recents img img {
-  max-width: 100%;
-  transition: all 2s;
+.recents:hover {
+  transform: scale(1.1);
+  transition: all;
 }
 
-.recents img:hover::before {
-  content: "\f06e" " View Details";
-  font-weight: 900;
+.recents:hover::before {
+  content: "View Details";
   position: absolute;
-  height: 0;
-  background-color: black;
+  background-color: #000000fd;
+  text-align: center;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  opacity: 0.6;
+  padding-top: 50px;
   bottom: 0;
-  animation: magie 0.5s;
+  animation: produit 0.5;
   animation-fill-mode: forwards;
   max-width: 50%;
 }
 
-.recents img:hover::after {
-  content: "\f291" "Add to cart";
-  font-weight: 900;
+.recents:hover::after {
+  content: "Add to card";
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 0;
   background-color: #DD4545;
+  text-align: center;
   color: white;
+  opacity: 0.6;
+  padding-top: 50px;
   bottom: 0;
-  animation: magie 0.5s;
+  animation: produit 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
   left: 50%;
-}
-
-.recents img .cards {
-  position: absolute;
-  margin-top: 125px;
-  justify-content: center;
-  display: none;
-}
-
-.recents img .cards .dark {
-  background-color: black;
-  width: 166.5px;
-  border: none;
-  height: 50px;
-}
-
-.recents img .cards .red {
-  background-color: #DD4545;
-  width: 166.5px;
-  border: none;
-  height: 50px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -16728,16 +16719,13 @@ header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
 }
 
 .shopat .slider {
-  z-index: 2;
-  right: 25%;
-  top: 50%;
+  left: 70%;
+  top: 25%;
   height: 400px;
   position: absolute;
   display: none;
   left: 0%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  top: 50%;
 }
 
 .sliders .row .living {
