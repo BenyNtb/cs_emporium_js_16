@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1 class="empo">emporium.</h1>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"></a>
@@ -42,7 +42,7 @@
                     </li>
                     <button class="blanc btn-light mr-2" type="submit"></button>
                     <button class="black btn-noir mr-2" type="submit"></button>
-                    <button type="button" class="btn btn-outline-secondary">connexion</button>
+                    <button type="button" class="sign btn-outline-secondary">connexion</button>
                 </ul>
             </div>
         </nav>
@@ -50,83 +50,88 @@
     <!-- SECTION SHOP AT EMPORIUM -->
     <section class="shopat">
         <!-- MODALE -->
-        <!-- premiere carte -->
-        <div class="modale1 container flex-column justify-content-center bg-light">
-            <div class="logo d-flex align-items-center justify-content-center">
-                <img src="./public/img/logo.png" alt="logo.png">
-                <button class="fermer bg-rouge text-white"> x</button>
+        <!-- modal connexion -->
+        <div id="connexion" class="co">
+            <!-- entete avec btn fermer  -->
+            <button class="fermer bg-rouge text-white float-right " >x</button>
+            <h1 class="font-weight-bold">emporium.</h1>
+            <div class=" d-flex justify-content-center align-items-center">
+                <button type="button" class="btn connexion btn-rouge mx-1 text-white">Connexion</button>
+                <button type="button" class="btn btn-rouge inscription text-white">Inscription</button>
             </div>
-            <div class="connexion d-flex justify-content-center align-items-center">
-                <button type="button" class="btnco btn-rouge text-white">Connexion</button>
-                <button type="button" class="btnco btn-rouge text-white">Inscription</button>
+
+            <!-- premiere carte -->
+            <div class="modale1 p-2 " id="modale1">
+                <div class="champ my-2 d-flex flex-column">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="**********" class="col-10">
+                        </div>
+                        <div class="submit my-2">
+                            <input type="checkbox" value="Check"> Check me out
+                        </div>
+                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                    </div>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="email">
-                <h5>Email address</h5>
-                <input type="text" placeholder="abcdef@gmail.com">
-                <p class="text-muted">We'll never share your email with anynone else.</p>
-            </div>
-            <div class="mdp">
-                <h5>Password</h5>
-                <input type="password" placeholder="*******">
-            </div>
-            <div class="submit">
-                <input type="checkbox" value="Check"> Check me out
-                <button type="button" class="btnshop btn-primary text-white">Submit</button>
-            </div>
-            <div class="reseaux container">
-                <ul>
-                    <li><i class="fab fa-facebook-f fb"></i></li>
-                    <li><i class="fab fa-instagram insta"></i></li>
-                    <li><i class="fab fa-snapchat-ghost snap"></i></li>
-                    <li><i class="fas fa-laptop-code pc"></i></li>
-                </ul>
+            <!-- deuxieme carte -->
+            <div class="modale1 p-2 d-none" id="modale2">
+                <div class="champ my-2 d-flex flex-column align-items-center">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp my-2">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="confirm my-2">
+                            <h5>Confirm your password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="form-check my-2 ">
+                            <input type="checkbox" value="femme">
+                            <label for="form-check-label">Femme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="homme">
+                            <label for="form-check-label">Homme</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- deuxieme carte -->
-        <div class="modale2 container flex-column justify-content-center bg-light">
-            <div class="logo d-flex align-items-center justify-content-center">
-                <img src="./public/img/logo.png" alt="logo.png">
-                <button class="fermer bg-rouge text-white"> x</button>
+            <div>
+                <h1 class="shop text-rouge">Shop at</h1>
+                <img class="imglogo" src="./public/img/logo.png" alt="logo">
+                <p class="wonderful">A wonderful serenity has taken possession for my entire soul, like these these
+                    sweet<br>mornings of spring which I enjoy with my.</p>
+                <button type="button" class="btnshop btn-rouge text-uppercase">Sale items</button>
             </div>
-            <div class="connexion d-flex justify-content-center align-items-center">
-                <button type="button" class="btnco btn-rouge text-white">Connexion</button>
-                <button type="button" class="btnco btn-rouge text-white">Inscription</button>
+            <div>
+                <img class="slider" src="./public/img/slider-1.jpg" alt="slider-1">
             </div>
-            <div class="email">
-                <h5>Email address</h5>
-                <input type="text" placeholder="abcdef@gmail.com">
-                <p class="text-muted">We'll never share your email with anynone else.</p>
-            </div>
-            <div class="mdp1">
-                <h5>Password</h5>
-                <input type="password" placeholder="*******">
-                <h5>Confirm your password</h5>
-                <input type="password" placeholder="*******">
-            </div>
-            <div class="submit">
-                <input type="checkbox" value="Check"> Femme
-                <input type="checkbox" value="Check"> Homme
-                <button type="button" class="btnshop btn-primary text-white">Inscription</button>
-            </div>
-            <div class="reseaux container">
-                <ul>
-                    <li><i class="fab fa-facebook-f fb"></i></li>
-                    <li><i class="fab fa-instagram insta"></i></li>
-                    <li><i class="fab fa-snapchat-ghost snap"></i></li>
-                    <li><i class="fas fa-laptop-code pc"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <h1 class="shop text-rouge">Shop at</h1>
-            <img class="imglogo" src="./public/img/logo.png" alt="logo">
-            <p class="wonderful">A wonderful serenity has taken possession for my entire soul, like these these
-                sweet<br>mornings of spring which I enjoy with my.</p>
-            <button type="button" class="btnshop btn-rouge text-uppercase">Sale items</button>
-        </div>
-        <div>
-            <img class="slider" src="./public/img/slider-1.jpg" alt="slider-1">
-        </div>
     </section>
 
     <!-- SECTION LIVING ROOM, ETC -->
@@ -229,24 +234,24 @@
         <h3 class="text-center" id="discover">Hot Fashion Products</h3>
         <div class="container justify-content-lg-around d-flex align-items-center text-center mx-auto">
             <div class="row justify-content-lg-around">
-                <div class="col-md-4" >
+                <div class="col-md-4">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="product-luxury-sofa">
                     <p id="para1">Luxury Sofa</p>
                     <span class="text-rouge">$600</span>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4">
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="product-gloves">
                     <p id="para1">Leather Gloves</p>
                     <button type="button" class="btn btn-rouge text-uppercase">sale!</button>
                     <span><s>$34.00</s></span>
                     <span class="text-rouge">$27.00</span>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="product-cups">
                     <p id="para1">Colorful Bowl</p>
                     <span class="text-rouge">$18.00</span>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4">
                     <img src="./public/img/products_mini/product-bag.jpg" alt="product-bag">
                     <p id="para1">Women Bag</p>
                     <button type="button" class="btn btn-rouge text-uppercase">sale!</button>
@@ -279,7 +284,8 @@
             <div class="secondtrusted bg-clair col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mr-0 mb-3">
                 <i class="far fa-check-circle pt-5 pb-5"></i>
                 <h5 class="text-uppercase pb-5">trusted by 10,000+ customers</h5>
-                <p class=" trust3 pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate mollitia nemo
+                <p class=" trust3 pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate mollitia
+                    nemo
                     earum nisi veritatis dolore.Vitae<br>deleniti</p>
                 <button type="button" class="btn btn-dark text-uppercase">learn more</button>
             </div>

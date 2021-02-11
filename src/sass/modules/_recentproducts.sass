@@ -17,10 +17,58 @@
     .span
         // height: 50px
     img
-        height: 250px    
-    button
-        border-radius: 100%
-        padding: 20px;
+        height: 250px
+        .anime
+        position: relative
+        img
+            max-width: 100%
+            transition: all 2s
+        &:hover
+            &::before
+                content: "\f06e" " View Details"
+                font-weight: 900
+                position: absolute
+                height: 0
+                background-color: black
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                bottom: 0
+                animation: magie 0.5s 
+                animation-fill-mode: forwards
+                max-width: 50%
+            &::after
+                content: "\f291" "Add to cart"
+                font-weight: 900
+                position: absolute
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 0
+                background-color: #DD4545
+                color: white
+                bottom: 0
+                animation: magie 0.5s 
+                animation-fill-mode: forwards
+                max-width: 50%
+                left: 50%        
+        .cards
+            position: absolute
+            margin-top: 125px
+            justify-content: center
+            display: none
+            .dark
+                background-color: black
+                width: 166.5px
+                border: none
+                height: 50px
+            .red
+                background-color: #DD4545
+                width: 166.5px
+                border: none
+                height: 50px        
+    // 
     @include media-breakpoint-only(sm)
         display: flex
         justify-content: center

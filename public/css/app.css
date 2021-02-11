@@ -16599,11 +16599,66 @@ header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
 
 .recents img {
   height: 250px;
+  position: relative;
 }
 
-.recents button {
-  border-radius: 100%;
-  padding: 20px;
+.recents img img {
+  max-width: 100%;
+  transition: all 2s;
+}
+
+.recents img:hover::before {
+  content: "\f06e" " View Details";
+  font-weight: 900;
+  position: absolute;
+  height: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  animation: magie 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+}
+
+.recents img:hover::after {
+  content: "\f291" "Add to cart";
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  background-color: #DD4545;
+  color: white;
+  bottom: 0;
+  animation: magie 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+  left: 50%;
+}
+
+.recents img .cards {
+  position: absolute;
+  margin-top: 125px;
+  justify-content: center;
+  display: none;
+}
+
+.recents img .cards .dark {
+  background-color: black;
+  width: 166.5px;
+  border: none;
+  height: 50px;
+}
+
+.recents img .cards .red {
+  background-color: #DD4545;
+  width: 166.5px;
+  border: none;
+  height: 50px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -16678,7 +16733,7 @@ header nav .collapse ul .btn-black, header nav .collapse ul .btn-blanc {
   top: 50%;
   height: 400px;
   position: absolute;
-  visibility: hidden;
+  display: none;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -16763,98 +16818,28 @@ body {
   margin: 0;
 }
 
-.modale1 {
+#connexion {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 700px;
+  height: 600px;
+  position: fixed;
+  left: 30vw;
+  top: 10vh;
+  z-index: 999;
   display: none;
   font-family: Poppins-Light;
 }
 
-.modale1 .logo {
-  justify-content: flex-end;
+#connexion i {
+  font-size: 24px;
 }
 
-.modale1 .logo .fermer {
-  border-radius: 4px;
+#connexion .fb {
+  color: #4021f0df;
 }
 
-.modale1 .connexion .btnco {
-  border-radius: 4px;
-  margin: 10px;
-  padding: 5px;
-  font-weight: bold;
-}
-
-.modale1 .email {
-  position: absolute;
-  flex-direction: column;
-}
-
-.modale1 .reseaux {
-  font-size: 20px;
-}
-
-.modale1 .reseaux ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.modale1 .reseaux ul li {
-  list-style: none;
-}
-
-.modale1 .reseaux ul .fb {
-  color: #1961e6;
-}
-
-.modale1 .reseaux ul .snap {
-  color: #f8ea26;
-}
-
-.modale2 {
-  display: none;
-  font-family: Poppins-Light;
-}
-
-.modale2 .logo {
-  justify-content: flex-end;
-}
-
-.modale2 .logo .fermer {
-  border-radius: 4px;
-}
-
-.modale2 .connexion .btnco {
-  border-radius: 4px;
-  margin: 10px;
-  padding: 5px;
-  font-weight: bold;
-}
-
-.modale2 .email {
-  position: absolute;
-  flex-direction: column;
-}
-
-.modale2 .reseaux {
-  font-size: 20px;
-}
-
-.modale2 .reseaux ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.modale2 .reseaux ul li {
-  list-style: none;
-}
-
-.modale2 .reseaux ul .fb {
-  color: #1961e6;
-}
-
-.modale2 .reseaux ul .snap {
-  color: #f8ea26;
+#connexion .snap {
+  color: #fbff26;
 }
