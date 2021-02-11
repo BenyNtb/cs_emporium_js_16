@@ -1,13 +1,5 @@
-// const { Button } = require("bootstrap")
+import{dark,light,emporium,navbar,recents,pararecents,discover,nav1,connexion,inscription,btnConnexion,btnSubs,btnSign,popUp,btnClose,header,emporium2,item1,item2,item3,item4,carou} from "./event.js"
 
-let dark = document.querySelector(".black")
-let light = document.querySelector(".blanc")
-let emporium = document.querySelector(".empo")
-let navbar = document.querySelectorAll(".nav-link")
-let recents = document.getElementById("rp")
-let pararecents = document.querySelectorAll("#para1")
-let discover = document.getElementById("discover")
-let nav1 = document.querySelector(".nav1")
 console.log(dark);
 console.log(light);
 
@@ -28,6 +20,7 @@ dark.addEventListener('click', () => {
     // pararecents.style.color = "white";
     // header.style.color = "black"
     header.style.backgroundColor = "black"
+    nav1.style.backgroundColor = "white"
 })
 
         // LIGHT MODE
@@ -46,14 +39,6 @@ light.addEventListener('click', () => {
 })
 
 // CONNEXION / SUBSCRIPTION
-
-let connexion = document.querySelector('#modale1')
-let inscription = document.querySelector('#modale2')
-let btnConnexion = document.querySelector('.connexion')
-let btnSubs = document.querySelector('.inscription')
-let btnSign = document.querySelector('.sign')
-let popUp = document.querySelector('#connexion')
-let btnClose = document.querySelector('.fermer')
 
     // CONNEXION
 
@@ -85,8 +70,6 @@ btnSubs.addEventListener('click', () => {
 
 // NAVBAR
 
-let header = document.getElementById('header')
-let emporium2 = document.querySelector('#emporium2')
 
 let sticky = header.offsetTop
 
@@ -105,12 +88,6 @@ function myFunction() {
 window.onscroll = function(){myFunction()}
 
 // CAROUSEL
-
-let item1 = document.querySelector('.item1')
-let item2 = document.querySelector('.item2')
-let item3 = document.querySelector('.item3')
-let item4 = document.querySelector('.item4')
-let carou = document.querySelector('.carou')
 
 item1.addEventListener('click', () => {
     carou.style.transform = "translateX(0%)"

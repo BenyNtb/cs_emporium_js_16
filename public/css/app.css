@@ -16465,13 +16465,6 @@ header nav {
   font-family: Poppins-Light;
 }
 
-header nav .nav1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 50%;
-}
-
 header nav .collapse {
   display: flex;
   align-items: center;
@@ -16488,6 +16481,15 @@ header nav .collapse ul li {
   margin: 10px;
 }
 
+@media (max-width: 767.98px) {
+  header nav .collapse ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
+
 header nav .collapse ul li .black, header nav .collapse ul li .blanc {
   border-radius: 5px;
   height: 30px;
@@ -16495,9 +16497,18 @@ header nav .collapse ul li .black, header nav .collapse ul li .blanc {
   border: 1px solid grey;
 }
 
+@media (max-width: 767.98px) {
+  header nav .collapse ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 header nav .collapse ul .sign {
   width: 130px;
-  height: 50px;
+  height: 40px;
+  border-radius: 7px;
 }
 
 header nav .collapse ul #emporium2 {
@@ -16559,6 +16570,17 @@ header nav .collapse ul #emporium2 {
   width: 60vw;
   font-weight: bold;
   text-align: center;
+}
+
+.hot .carousel .sale {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  margin: 0px;
 }
 
 .learn {
@@ -16648,7 +16670,16 @@ header nav .collapse ul #emporium2 {
   font-weight: bold;
   font-size: 17px;
   padding-right: 0px;
-  z-index: 0;
+}
+
+.recents .container .row .col-4 div .sale {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
 }
 
 .recents .container .row .col-4 div .row .col-6 button {
@@ -16668,70 +16699,6 @@ header nav .collapse ul #emporium2 {
     width: 100%;
     height: 20%;
   }
-}
-
-.shopat {
-  background-color: #F3F3F3;
-  height: 450px;
-  top: 50px;
-}
-
-.shopat .shop {
-  padding-left: 200px;
-  font-family: Poppins-Light;
-  font-weight: bold;
-  color: rouge;
-  font-size: 52px;
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 0;
-}
-
-.shopat .imglogo {
-  padding-left: 200px;
-  height: 115px;
-  height: 68px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  height: 60px;
-  padding-left: 0px;
-}
-
-.shopat .wonderful {
-  padding-left: 200px;
-  font-family: Poppins-Light;
-  color: #535353;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0px;
-}
-
-.shopat .btnshop {
-  border-radius: 30px;
-  padding: 10px;
-  font-family: 12px;
-  border: none;
-  margin-left: 200px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 12px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-left: 125px;
-}
-
-.shopat .slider {
-  z-index: 2;
-  height: 400px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .sliders .row .living {
@@ -16762,7 +16729,7 @@ header nav .collapse ul #emporium2 {
 .sliders .row .sale {
   background-image: url("../img/services/service-2.jpg");
   background-size: contain;
-  height: 320px;
+  height: 315px;
   width: 450px;
   background-repeat: no-repeat;
   background-position: center;
@@ -16786,7 +16753,7 @@ header nav .collapse ul #emporium2 {
 .sliders .row .clothes {
   background-image: url("../img/services/slider-3.jpg");
   background-size: contain;
-  height: 320px;
+  height: 315px;
   width: 450px;
   background-repeat: no-repeat;
   background-position: center;
@@ -16836,4 +16803,81 @@ body {
 
 #connexion .snap {
   color: #fbff26;
+}
+
+.shopat {
+  background-color: #F3F3F3;
+  height: 450px;
+  top: 50px;
+}
+
+.shopat .shop {
+  font-family: Poppins-Light;
+  font-weight: bold;
+  color: rouge;
+  font-size: 52px;
+  padding-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .shopat .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.shopat p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.shopat .imglogo {
+  height: 115px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.shopat .wonderful {
+  font-family: Poppins-Light;
+  color: #535353;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopat .btnshop {
+  border-radius: 30px;
+  padding: 10px;
+  font-family: 12px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+@media (max-width: 767.98px) {
+  .shopat .btnshop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+.shopat .slider {
+  z-index: 2;
+  height: 400px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

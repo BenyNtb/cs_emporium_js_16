@@ -5,60 +5,60 @@
     top: 50px
 
     .shop
-        padding-left: 200px
         font-family: Poppins-Light
         font-weight: bold
         color: rouge
         font-size: 52px
         padding-top: 100px
-        p
+        @include media-breakpoint-down(sm)
+            display: flex
+            justify-content: center
+            align-items: center
+    p
         @include media-breakpoint-only(sm)
         display: flex
         align-items: center
         text-align: center
-        
-        @include media-breakpoint-only(md)
-        padding-left: 0
+            
     .imglogo
-        padding-left: 200px
         height: 115px
-        @include media-breakpoint-only(sm)
+        @include media-breakpoint-down(sm)
         height: 68px
         justify-content: center
         align-items: center
-        margin-left: 10px
         @include media-breakpoint-only(md)
         height: 60px
-        padding-left: 0px
     .wonderful
-        padding-left: 200px
         font-family: Poppins-Light
         color: #535353
-        @include media-breakpoint-only(sm)
+        text-align: left
+        @include media-breakpoint-down(sm)
         display: flex
         justify-content: center
         align-items: center
-        padding-left: 0px
         
     .btnshop
         border-radius: 30px
         padding: 10px
         font-family: 12px
         border: none
-        margin-left: 200px
         padding-left: 30px
         padding-right: 30px
         font-size: 12px
         align-items: center
         display: flex
         justify-content: center
-        @include media-breakpoint-only(sm)
-        margin-left: 125px
+        margin-left: 0px
+        @include media-breakpoint-down(sm)
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-left: 0px
     .slider
         z-index: 2;
         height: 400px
         position: absolute 
         @include media-breakpoint-only(md)
         display: flex;
-        justify-content: center;
-        align-content: center;
+        justify-content: center
+        align-content: center

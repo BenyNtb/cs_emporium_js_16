@@ -5,12 +5,12 @@ header
         margin-top: 10px
     nav
         font-family: Poppins-Light
-        .nav1
-            @include media-breakpoint-only(sm)
-            display: flex
-            justify-content: center
-            align-items: center
-            left: 50%
+        // .navbar-toggler-icon
+        //     @include media-breakpoint-down(sm)
+        //         display: flex
+        //         justify-content: center
+        //         align-items: center
+        //         color: red
         .collapse 
             display: flex
             align-items: center
@@ -21,14 +21,25 @@ header
                 margin: 10px
                 li
                     margin: 10px
+                    @include media-breakpoint-down(sm)
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        padding-right: 0px
                     .black, .blanc
                         border-radius: 5px
                         height: 30px
                         width: 30px
                         border: 1px solid grey
+                    a
+                        @include media-breakpoint-down(sm)
+                            display: flex
+                            justify-content: center
+                            align-items: center
                 .sign
                     width: 130px
-                    height: 50px
+                    height: 40px
+                    border-radius: 7px
                 #emporium2
                     display: none    
 .sticky 
