@@ -7,6 +7,7 @@ let navbar = document.querySelectorAll(".nav-link")
 let recents = document.getElementById("rp")
 let pararecents = document.querySelectorAll("#para1")
 let discover = document.getElementById("discover")
+let nav1 = document.querySelector(".nav1")
 console.log(dark);
 console.log(light);
 
@@ -85,7 +86,7 @@ btnSubs.addEventListener('click', () => {
 // NAVBAR
 
 let header = document.getElementById('header')
-let emporium2 = document.querySelector('#emporium')
+let emporium2 = document.querySelector('#emporium2')
 
 let sticky = header.offsetTop
 

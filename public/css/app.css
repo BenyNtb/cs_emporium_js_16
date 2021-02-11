@@ -16557,6 +16557,8 @@ header nav .collapse ul #emporium2 {
   font-family: Poppins-Light;
   overflow: hidden;
   width: 60vw;
+  font-weight: bold;
+  text-align: center;
 }
 
 .learn {
@@ -16683,7 +16685,6 @@ header nav .collapse ul #emporium2 {
   padding-top: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   padding-left: 0;
 }
