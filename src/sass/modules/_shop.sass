@@ -2,8 +2,9 @@
     background-color: #F3F3F3 
     height: 450px
     @include media-breakpoint-only(sm)
-    top: 50px
-    // height: 565px
+        // top: 50px
+        height: 565px
+        background-color: #000
 
     .shop
         font-family: Poppins-Light
@@ -59,11 +60,11 @@
         // z-index: 2;
         height: 400px
         position: absolute 
-        // @include media-breakpoint-only(sm)
-        // display: flex;
-        // justify-content: center
-        // align-content: center
-        // height: 208px
-        // left: 27%
-        // display: none
-        // z-index: 2;
+        @include media-breakpoint-down(sm)
+            justify-content: center
+            align-content: center
+            height: 208px
+            z-index: 0
+            left: 27%
+
+    

@@ -16465,6 +16465,12 @@ header nav {
   font-family: Poppins-Light;
 }
 
+@media (max-width: 767.98px) {
+  header nav .nav1 {
+    padding: 0.25rem 9.75rem;
+  }
+}
+
 header nav .collapse {
   display: flex;
   align-items: center;
@@ -16567,7 +16573,8 @@ header nav .collapse ul #emporium2 {
 .hot .carousel {
   font-family: Poppins-Light;
   overflow: hidden;
-  width: 60vw;
+  width: 49vw;
+  margin: 0 5vw;
   font-weight: bold;
   text-align: center;
 }
@@ -16642,9 +16649,22 @@ header nav .collapse ul #emporium2 {
   padding-right: 15%;
 }
 
+@media (max-width: 767.98px) {
+  .recents {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
 .recents .container .row {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .recents .container .row .div3 {
+    display: none;
+  }
 }
 
 .recents .container .row .col-4 div {
@@ -16658,6 +16678,13 @@ header nav .collapse ul #emporium2 {
 
 .recents .container .row .col-4 div .products img {
   max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .recents .container .row .col-4 div .products img {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }
 
 .recents .container .row .col-4 div .products:hover {
@@ -16767,6 +16794,10 @@ header nav .collapse ul #emporium2 {
   }
 }
 
+.sliders .row {
+  padding: 0px 0px 0px 0px;
+}
+
 .sliders .row .living {
   background-image: url("../img/services/service-1.jpg");
   background-size: contain;
@@ -16796,7 +16827,7 @@ header nav .collapse ul #emporium2 {
   background-image: url("../img/services/service-2.jpg");
   background-size: contain;
   height: 315px;
-  width: 450px;
+  width: 430px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -16874,7 +16905,13 @@ body {
 .shopat {
   background-color: #F3F3F3;
   height: 450px;
-  top: 50px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .shopat {
+    height: 565px;
+    background-color: #000;
+  }
 }
 
 .shopat .shop {
@@ -16942,4 +16979,14 @@ body {
 .shopat .slider {
   height: 400px;
   position: absolute;
+}
+
+@media (max-width: 767.98px) {
+  .shopat .slider {
+    justify-content: center;
+    align-content: center;
+    height: 208px;
+    z-index: 0;
+    left: 27%;
+  }
 }

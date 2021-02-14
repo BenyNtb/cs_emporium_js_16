@@ -36,13 +36,18 @@ light.addEventListener('click', () => {
     });
     discover.style.color = "black"
     header.style.backgroundColor = "white"
-    nav1.style.backgroundColor = "black"
+    // nav1.style.backgroundColor = "black"
 })
 
 // CONNEXION / SUBSCRIPTION
 
     // CONNEXION
 
+// btnConnexion.addEventListener('click', () => {
+//     document.body.backgroundColor = "grey"
+    
+// })
+    
 btnConnexion.addEventListener('click', () => {
     if (connexion.classList.contains('d-none')) {
         connexion.classList.remove('d-none')
@@ -51,6 +56,7 @@ btnConnexion.addEventListener('click', () => {
 })   
 btnSign.addEventListener('click', () => {
     popUp.style.display = "block"
+    btnSign.style.zIndex = "1"
 })
 btnClose.addEventListener('click', () => {
     popUp.style.display = "none"
