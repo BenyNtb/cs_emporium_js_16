@@ -20,4 +20,5 @@ let item2 = document.querySelector('.item2')
 let item3 = document.querySelector('.item3')
 let item4 = document.querySelector('.item4')
 let carou = document.querySelector('.carou')
-export{dark,light,emporium,navbar,recents,pararecents,discover,nav1,connexion,inscription,btnConnexion,btnSubs,btnSign,popUp,btnClose,header,emporium2,item1,item2,item3,item4,carou}
+let div1 = document.querySelector('#div1')
+export{dark,light,emporium,navbar,recents,pararecents,discover,nav1,connexion,inscription,btnConnexion,btnSubs,btnSign,popUp,btnClose,header,emporium2,item1,item2,item3,item4,carou,div1}

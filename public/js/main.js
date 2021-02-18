@@ -1,4 +1,4 @@
-import{dark,light,emporium,navbar,recents,pararecents,discover,nav1,connexion,inscription,btnConnexion,btnSubs,btnSign,popUp,btnClose,header,emporium2,item1,item2,item3,item4,carou} from "./event.js"
+import{dark,light,emporium,navbar,recents,pararecents,discover,nav1,connexion,inscription,btnConnexion,btnSubs,btnSign,popUp,btnClose,header,emporium2,item1,item2,item3,item4,carou,div1} from "./event.js"
 
 console.log(dark);
 console.log(light);
@@ -56,10 +56,14 @@ btnConnexion.addEventListener('click', () => {
 })   
 btnSign.addEventListener('click', () => {
     popUp.style.display = "block"
-    btnSign.style.zIndex = "1"
+    // btnSign.style.zIndex = "1"
+    document.body.style.overflow='hidden'
+    div1.style= " width: 100%; height: 100%;  background-color: rgba(0,0,0,.5); z-index: 999; position: fixed; "
 })
 btnClose.addEventListener('click', () => {
     popUp.style.display = "none"
+    document.body.style.overflow= null
+    div1.style= " display:none "
 })
 btnSign.addEventListener('click', () => {
     if (connexion.classList.contains('d-none')) {
@@ -85,6 +89,7 @@ function myFunction() {
         header.classList.add("sticky")
         emporium2.style.display = "flex"
         emporium.style.display = "none"
+        popUp.style = "z-index: 1000"
     } else {
         header.classList.remove("sticky")
         emporium2.style.display = "none"

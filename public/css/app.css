@@ -16678,21 +16678,15 @@ header nav .collapse ul #emporium2 {
 
 .recents .container .row .col-4 div .products img {
   max-width: 100%;
+  transition: all 2s;
 }
 
-@media (max-width: 767.98px) {
-  .recents .container .row .col-4 div .products img {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-}
-
-.recents .container .row .col-4 div .products:hover {
+.recents .container .row .col-4 div .products img:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
 
-.recents .container .row .col-4 div .products:hover::before {
+.recents .container .row .col-4 div .products::before {
   content: "View Details";
   position: absolute;
   background-color: #000;
@@ -16701,12 +16695,15 @@ header nav .collapse ul #emporium2 {
   opacity: 0.8;
   padding-top: 10px;
   bottom: 0;
-  animation: products 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
+  width: 50%;
+  left: 0;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.recents .container .row .col-4 div .products:hover::after {
+.recents .container .row .col-4 div .products::after {
   content: "Add to Card";
   position: absolute;
   background-color: #f51313;
@@ -16715,10 +16712,12 @@ header nav .collapse ul #emporium2 {
   opacity: 0.8;
   padding-top: 10px;
   bottom: 0;
-  animation: products 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
   left: 50%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 767.98px) {
@@ -16790,7 +16789,7 @@ header nav .collapse ul #emporium2 {
   }
   100% {
     width: 100%;
-    height: 20%;
+    height: 30%;
   }
 }
 
@@ -16983,10 +16982,6 @@ body {
 
 @media (max-width: 767.98px) {
   .shopat .slider {
-    justify-content: center;
-    align-content: center;
-    height: 208px;
-    z-index: 0;
-    left: 27%;
+    display: none;
   }
 }
